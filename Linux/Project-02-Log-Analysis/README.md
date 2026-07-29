@@ -1,49 +1,52 @@
- # Project 02: Linux Log Analysis
+# Project 02: Linux Log Analysis
 
 ## Overview
 
-This project focuses on understanding Linux log files and how they are used to monitor systems, troubleshoot issues, and investigate security events.
+This project focuses on understanding Linux log analysis and how security professionals use logs to investigate system activity.
 
-Log analysis is one of the most important skills in cybersecurity because logs provide evidence of what has happened on a system. Security analysts use logs to detect suspicious activity, investigate incidents, and identify security issues.
+Logs provide important evidence about events happening on a system. Security analysts use log analysis to detect suspicious activity, investigate incidents, and monitor system behavior.
+
+In this project, I practiced creating and analyzing authentication-related log data using Linux command-line tools.
 
 ---
 
 # Lab Environment
 
 **Platform:**
-- iSH Shell (Alpine Linux)
-- Ubuntu Playground (Killercoda)
+- iSH Shell on iPad
 
-**Operating Systems:**
+**Operating System:**
 - Alpine Linux
-- Ubuntu Linux
 
 ---
 
 # Objectives
 
-The objectives of this project are to:
+The objectives of this project were to:
 
-- Understand what Linux log files are
-- Learn the purpose of different log files
-- Read log files using Linux commands
-- Search logs for useful information
-- Understand how logs support cybersecurity investigations
+- Understand the purpose of Linux logs
+- Practice reading and analyzing log files
+- Search log files for security-related information
+- Identify failed and successful login attempts
+- Learn basic security investigation techniques using Linux commands
 
 ---
 
 # Linux Commands Practiced
 
-# Linux Commands Practiced
-
 ```bash
-cat
-grep
-touch
-echo
+uname
 mkdir
 cd
-```
+touch
+echo
+cat
+grep
+grep -c
+head
+tail
+less
+dmesg
 
 ---
 
@@ -52,8 +55,6 @@ cd
 | Location | Description |
 |----------|-------------|
 | `/var/log` | Stores most Linux log files |
-| `/var/log/messages` | General system messages (varies by distribution) |
-| `/var/log/auth.log` | Authentication and login activity (Ubuntu/Debian) |
 | `/var/log/secure` | Authentication logs (RHEL/CentOS) |
 | `/var/log/syslog` | General system log (Ubuntu/Debian) |
 | `/var/log/dmesg` | Kernel boot messages |
