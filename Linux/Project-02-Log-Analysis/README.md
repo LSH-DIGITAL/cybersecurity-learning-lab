@@ -34,13 +34,15 @@ The objectives of this project are to:
 
 # Linux Commands Practiced
 
+# Linux Commands Practiced
+
 ```bash
 cat
-less
-head
-tail
 grep
-dmesg
+touch
+echo
+mkdir
+cd
 ```
 
 ---
@@ -143,7 +145,7 @@ This knowledge provides a strong foundation for future topics such as incident r
 
 # Status
 
-🚧 In Progress
+✅ Completed
 
 ---
 
